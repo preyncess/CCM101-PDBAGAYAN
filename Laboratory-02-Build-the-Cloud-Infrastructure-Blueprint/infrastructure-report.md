@@ -62,8 +62,6 @@ The server currently has sufficient available disk space for basic cloud server 
 
 ## 5. Network Information
 
-The hostname and IP addresses of the server were checked using the following commands:
-
-```bash
-hostname
-hostname -I
+Hostname: ubuntu
+IP Address 1: 172.30.1.2
+IP Address 2: 172.17.0.1

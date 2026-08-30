@@ -63,5 +63,5 @@ The server currently has sufficient available disk space for basic cloud server 
 ## 5. Network Information
 
 Hostname: ubuntu
-IP Address 1: 172.30.1.2
-IP Address 2: 172.17.0.1
+- IP Address 1: 172.30.1.2
+- IP Address 2: 172.17.0.1

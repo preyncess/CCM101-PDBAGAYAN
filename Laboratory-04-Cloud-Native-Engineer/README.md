@@ -1,6 +1,4 @@
-# Checkpoint 5 — Container Lifecycle
-
-Now you will practice managing the container.
+# Container Lifecycle
 
 ## 1. List Running Containers
 

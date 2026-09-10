@@ -1,71 +1,86 @@
-# Container Lifecycle
+# Laboratory 04 – Cloud-Native Engineer
 
-## 1. List Running Containers
+## Mission Overview
 
-Command:
+This laboratory activity helped me understand the basic concepts of cloud-native engineering and containerization. I learned how Virtual Machines differ from Containers and gained hands-on experience using Docker to deploy an Nginx web server. I completed the activities using the KillerCoda Docker playground.
+
+## Objectives
+
+- Learn the main differences between Virtual Machines and Containers.
+- Check if Docker is properly installed and running.
+- Practice using basic Docker CLI commands.
+- Download and run an Nginx container.
+- Understand how host and container ports are connected.
+- Practice managing the different stages of a Docker container.
+- Record and organize Docker procedures using Markdown.
+
+## Docker Commands Executed
+
+### Check Docker Installation
+
+```bash
+docker --version
+```
+
+### Check Docker Information
+
+```bash
+docker info
+```
+
+### Pull Nginx
+
+```bash
+docker pull nginx
+```
+
+### Run Nginx
+
+```bash
+docker run -d --name nginx-server -p 8080:80 nginx
+```
+
+### List Running Containers
 
 ```bash
 docker ps
 ```
 
-**Explanation:**
+### Test Nginx
 
-This displays the containers that are currently running, including their names, status, and port mappings.
+```bash
+curl http://localhost:8080
+```
 
----
-
-## 2. Stop the Running Container
-
-Command:
+### Stop Container
 
 ```bash
 docker stop nginx-server
 ```
 
-**Explanation:**
-
-This stops the running `nginx-server` container without immediately deleting it.
-
----
-
-## 3. Verify That It Is Stopped
-
-Command:
-
-```bash
-docker ps
-```
-
-You should no longer see `nginx-server` because `docker ps` only shows running containers.
-
-You can use:
+### View All Containers
 
 ```bash
 docker ps -a
 ```
 
-to see both running and stopped containers.
-
-You should see something similar to:
-
-```text
-nginx-server    Exited (...)
-```
-
----
-
-## 4. Remove the Container
-
-Command:
+### Remove Container
 
 ```bash
 docker rm nginx-server
 ```
 
-**Explanation:**
+## Skills Learned
 
-This permanently removes the stopped `nginx-server` container.
+- Basic Docker CLI usage
+- Deploying containers
+- Setting up an Nginx web server
+- Understanding port mapping
+- Managing the Docker container lifecycle
+- Using Linux terminal commands
+- Creating technical documentation in Markdown
+- Organizing projects in GitHub
 
+## Challenges Encountered
 
-docker ps -a
-```
+One challenge I experienced was understanding the difference between Virtual Machines and Docker containers. I also had to learn how port mapping allows me to access a web server running inside a container. By practicing the Docker commands, I was able to understand the process more clearly. I also needed to carefully check the container status to make sure the Nginx container was successfully stopped and removed.

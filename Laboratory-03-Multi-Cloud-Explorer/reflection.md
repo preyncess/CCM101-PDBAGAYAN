@@ -10,4 +10,4 @@ I also learned that business requirements are very important when selecting a cl
 
 Acting as a Cloud Solutions Consultant helped me understand that choosing cloud services is not only about technical features. I also need to understand what the client actually needs before recommending a solution.
 
-Finally, this mission improved my GitHub Cloud Computing Portfolio because I added a complete multi-cloud research project. It also helped me practice documentation, comparison, decision-making, Linux investigation, and presenting technical information in a more organized way.
+This mission improved my GitHub Cloud Computing Portfolio because I added a complete multi-cloud research project. It also helped me practice documentation, comparison, decision-making, Linux investigation, and presenting technical information in a more organized way.

@@ -1,17 +1,23 @@
-# Multi-Tier Architecture
+# Docker Compose Guide
 
-## What is a Two-Tier Architecture?
+## What Does the `services:` Block Do?
 
-A two-tier architecture is a system that separates an application into two main parts: the web/application tier and the database tier. The web/application tier handles the requests from users, while the database tier stores and manages the application's data.
+The `services:` block defines the containers that will be created and managed by Docker Compose. In this project, there are two services: `database` for MariaDB and `app` for Nextcloud. Each service contains its own image, settings, environment variables, and other configuration needed for deployment.
 
-## The Web/Application Tier
+## How Does the Nextcloud App Find the Database?
 
-The web/application tier is responsible for providing the user interface and handling HTTP requests from users. In this laboratory, the Nextcloud container serves as the application that users access through a web browser. It allows users to interact with the private cloud storage system.
+The Nextcloud application uses the `MYSQL_HOST` environment variable to find the database container.
 
-## The Database Tier
+The configuration contains:
 
-The database tier is responsible for storing persistent information used by the application. In this laboratory, MariaDB is used as the database container. It stores information such as Nextcloud user accounts and other data needed by the application.
+```yaml
+- MYSQL_HOST=database
+```
 
-## Why Separate Them?
+The value `database` refers to the service name of the MariaDB container. Docker Compose provides internal networking between the services, allowing the Nextcloud container to communicate with MariaDB using the service name.
 
-Separating the web application and database into different containers makes the system easier to manage and maintain. Each container has its own responsibility, so the database can be managed separately from the Nextcloud application and the system can be expanded more easily in the future.
+## `docker run` vs `docker-compose up -d`
+
+The `docker run` command is normally used to create and start an individual container. When several containers are required, multiple `docker run` commands may need to be written and configured separately.
+
+The `docker-compose up -d` command uses the configuration in the `docker-compose.yml` file to create and start multiple related services together. The `-d` option runs the services in the background, allowing the terminal to be used for other commands.

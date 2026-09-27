@@ -15,12 +15,3 @@ The database tier is responsible for storing persistent information used by the 
 ## Why Separate Them?
 
 Separating the web application and database into different containers makes the system easier to manage and maintain. Each container has its own responsibility, so the database can be managed separately from the Nextcloud application and the system can be expanded more easily in the future.
-
-## Architecture Used in This Laboratory
-
-The architecture consists of two containers:
-
-1. **Nextcloud App Container** - handles the web interface and user requests.
-2. **MariaDB Database Container** - stores the database information required by Nextcloud.
-
-The Nextcloud application connects to MariaDB using the database service name defined in the Docker Compose file.

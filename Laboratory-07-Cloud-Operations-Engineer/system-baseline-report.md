@@ -9,7 +9,7 @@ This report records the initial health of the Linux host before deploying the Ng
 * Total RAM: [               total        used        free      shared  buff/cache   available
 Mem:           1.9Gi       411Mi       1.1Gi       1.1Mi       497Mi       1.5Gi
 Swap:          1.0Gi          0B       1.0Gi
-root@ubuntu:~$ ]
+]
 * Command used: `free -h`
 * Evidence: `screenshots/memory-check.png`
 

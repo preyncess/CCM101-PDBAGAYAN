@@ -21,3 +21,24 @@ Application logs help engineers identify requests that fail and understand what 
 ### Evidence
 
 * `screenshots/docker-logs.png`
+
+## Real-Time Container Metrics
+
+Command executed:
+
+`docker stats`
+
+### Recorded Results
+
+* Container name: `client-website`
+* Memory usage: [2.742MiB]
+* CPU usage: [0.00%]
+
+
+### Evidence
+
+* `screenshots/container-metrics.png`
+
+### Observation
+
+The Docker stats command displays the container's resource consumption in real time. The recorded CPU and memory values provide a snapshot of the container's resource usage during the test.

@@ -15,8 +15,8 @@ Swap:          1.0Gi          0B       1.0Gi
 
 ## Disk Storage
 
-* Root filesystem total capacity: [Ilagay ang Size mula sa `df -h /`]
-* Available storage: [Ilagay ang Avail value]
+* Root filesystem total capacity: [IFilesystem      Size  Used Avail Use% Mounted on]
+* Available storage: [/dev/vda1        19G  5.5G   13G  30% /]
 * Command used: `df -h /`
 * Evidence: `screenshots/disk-check.png`
 

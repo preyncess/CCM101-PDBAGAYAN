@@ -39,4 +39,3 @@ This allows TCP connections through port 8080 so users can access the web applic
 
 SS.H should be allowed before turning on UFW because the firewall could block the SSH connection. If this happens, I may lose remote access to the server and be unable to manage it remotely
 
-SS.H should be allowed before turning on UFW because the firewall could block the SSH connection. If this happens, I may lose remote access to the server and be unable to manage it remotely
